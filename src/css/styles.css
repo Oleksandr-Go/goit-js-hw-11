@@ -8,6 +8,13 @@
 @import url('./reset.css');
 @import url('./base.css');
 
+/* #region глобальні стилі */
+body {
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+/* #endregion глобальні стилі */
+
 /* #region loader styles */
 .loader {
   width: 175px;
@@ -110,13 +117,15 @@ input {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  border: 1px solid #808080;
+  border: 1px solid #000;
   border-radius: 4px;
   width: 272px;
   height: 40px;
   padding-left: 16px;
   margin-top: 36px;
   margin-bottom: 32px;
+  outline: transparent;
+  background-color: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -150,6 +159,8 @@ button {
   row-gap: 24px;
   column-gap: 24px;
   margin-bottom: 32px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .gallery-container {
@@ -157,35 +168,44 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   border: 1px solid #808080;
-  width: 300px;
   height: auto;
+  width: auto;
+  background-color: #ffffff;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .gallery-image {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: fit-content;
-  width: fit-content;
+  height: 200px;
+  width: 360px;
 }
 
 .gallery-min-div {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 10px;
 }
 
-.div-text {
+.gallery-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.gallery-text {
+  align-items: center;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.text-span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
@@ -205,7 +225,7 @@ button:focus {
 
 input[type='text']:hover,
 input[type='text']:focus {
-  border: 1px solid #000;
+  border: 1px solid #4e75ff;
 }
 
 /* #endregion gallery styles */

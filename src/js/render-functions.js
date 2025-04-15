@@ -26,19 +26,19 @@ export function createGallery(images) {
     />
   </a>
   <div class='gallery-min-div'> 
-     <div class='div-text'>
-       <p class="gallery-text">likes ${likes}</p>
-     </div>
-     <div class='div-text'>
-       <p class="gallery-text">views ${views}</p>
-     </div>
-     <div class='div-text'>
-       <p class="gallery-text">comments ${comments}</p>
-     </div>
-     <div class='div-text'>
-       <p class="gallery-text">downloads ${downloads}</p>
-     </div>
-   </div>
+      <div class='div-text'>
+          <p class="gallery-text">Likes<span class='text-span'>${likes}</span></p>
+      </div>
+      <div class='div-text'>
+         <p class="gallery-text">Views<span class='text-span'>${views}</span></p>
+      </div>
+      <div class='div-text'>
+         <p class="gallery-text">Comments<span class='text-span'>${comments}</span></p>
+      </div>
+      <div class='div-text'>
+         <p class="gallery-text">Downloads<span class='text-span'>${downloads}</span></p>
+      </div>
+    </div>
   </li>
 </div>
 `
