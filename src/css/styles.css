@@ -170,7 +170,7 @@ button {
   border: 1px solid #808080;
   height: auto;
   width: auto;
-  background-color: #ffffff;
+  background-color: rgba(12, 16, 19, 0.946);
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
@@ -199,7 +199,7 @@ button {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  color: #2e2f42;
+  color: #ffffff;
 }
 
 .text-span {
@@ -207,7 +207,7 @@ button {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #2e2f42;
+  color: #ffffff;
 }
 
 input::placeholder {
