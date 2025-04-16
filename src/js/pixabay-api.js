@@ -27,10 +27,10 @@ export function getImagesByQuery(query) {
 
       return response.data;
     })
-    .catch(error => {
+    .catch(error =>
       iziToast.error({
         message: 'Sorry, something went wrong.',
         position: 'center',
-      });
-    });
+      })
+    );
 }

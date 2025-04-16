@@ -24,6 +24,6 @@ form.addEventListener('submit', event => {
 
   getImagesByQuery(inputEl)
     .then(response => createGallery(response.hits))
-    .catch(error => console.log('Ваш запит не знайдено,', error.message))
+    .catch(error => console.error('Вибачте, щось пішло не так.', error.message))
     .finally(() => hideLoader());
 });
